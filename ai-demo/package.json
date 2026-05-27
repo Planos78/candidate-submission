@@ -7,11 +7,14 @@
     "build": "tsc",
     "start": "ts-node src/index.ts",
     "dev": "ts-node src/index.ts",
+    "web": "ts-node src/server.ts",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.36.0"
+    "@anthropic-ai/sdk": "^0.36.0",
+    "@types/express": "^5.0.6",
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
@@ -24,6 +27,8 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.ts"]
+    "testMatch": [
+      "**/tests/**/*.test.ts"
+    ]
   }
 }
