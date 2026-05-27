@@ -37,11 +37,14 @@ See [`ai-demo/`](ai-demo/) for TypeScript implementation.
 cd ai-demo
 npm install
 
-# Without AI (uses rule-based fallback, no API key needed):
-npm start
+# Web UI (recommended — open http://localhost:3001):
+npm run web
 
 # With real Claude AI:
-ANTHROPIC_API_KEY=your_key_here npm start
+ANTHROPIC_API_KEY=your_key_here npm run web
+
+# Terminal output only:
+npm start
 
 # Run tests:
 npm test
